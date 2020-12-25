@@ -10,7 +10,7 @@ import { HelloStack } from "../lib/hello-service/stacks/hello-stack";
 test("Empty Stack", () => {
   const app = new cdk.App();
   // WHEN
-  const stack = new HelloStack(app, "MyTestStack");
+  const stack = new HelloStack(app, "HelloStack");
   // THEN
   expectCDK(stack).to(
     matchTemplate(
