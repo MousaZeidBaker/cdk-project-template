@@ -5,12 +5,12 @@ import {
 } from "@aws-cdk/assert";
 import * as cdk from "@aws-cdk/core";
 
-import * as CdkProjectTemplate from "../lib/helloService/stacks/helloStack";
+import { HelloStack } from "../lib/hello-service/stacks/hello-stack";
 
 test("Empty Stack", () => {
   const app = new cdk.App();
   // WHEN
-  const stack = new CdkProjectTemplate.HelloStack(app, "MyTestStack");
+  const stack = new HelloStack(app, "MyTestStack");
   // THEN
   expectCDK(stack).to(
     matchTemplate(
