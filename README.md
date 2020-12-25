@@ -1,4 +1,4 @@
-# Welcome to CDK Template Project!
+# Welcome to CDK Project Template!
 
 ## Getting started
 
