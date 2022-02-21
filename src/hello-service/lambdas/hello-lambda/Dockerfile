@@ -20,6 +20,9 @@ copy test test
 # run test
 RUN yarn test
 
+# prune non-prod dependencies
+RUN yarn install --frozen-lockfile --production
+
 # multi-stage build
 FROM amazon/aws-lambda-nodejs:14
 
