@@ -47,7 +47,7 @@ yarn test
 
 Run linter, pass `--fix` to automatically fix most problems
 ```shell
-yarn lint .
+yarn lint
 ```
 
 ### Unblocking cross-stack CDK references example
