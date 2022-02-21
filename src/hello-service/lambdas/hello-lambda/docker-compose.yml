@@ -1,0 +1,8 @@
+version: "2.4"
+services:
+  lambda:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      - AWS_LAMBDA_FUNCTION_TIMEOUT=30
